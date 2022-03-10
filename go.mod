@@ -1,4 +1,4 @@
-module github.com/spacelift-io/spcontext
+module github.com/TheMacies/spcontext
 
 go 1.16
 
