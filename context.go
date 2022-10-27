@@ -269,6 +269,10 @@ type notifiedError struct {
 	error
 }
 
+func (u notifiedError) Unwrap() error {
+	return u.error
+}
+
 func (ctx *Context) error(fields []interface{}, err error, internal InternalMessage, safe SafeMessage) error {
 	if err == nil {
 		return nil
